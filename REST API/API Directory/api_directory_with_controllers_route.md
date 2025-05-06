@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 homework_assignments = {}
 
-@app.route('/assessmentk', methods=['POST'])
+@app.route('/assessment', methods=['POST'])
 def create_homework():
     data = request.get_json()
     assignment_id = len(homework_assignments) + 1
